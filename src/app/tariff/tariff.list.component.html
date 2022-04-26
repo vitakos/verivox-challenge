@@ -1,0 +1,22 @@
+<div id="tariff-list-table" *ngIf="tariffs">
+  <div class="filter">
+    <div class="filter-selector">
+      <span>Sort by: </span>
+      <select (change)="changeFilter($event)" [value]="selFilter" class="sel-filter">
+        <option value="tarifId">--default--</option>
+        <option value="downStream">Download</option>
+        <option value="upStream">Upload</option>
+        <option value="price">Price</option>
+      </select>
+      <select (change)="changeFilterDir($event)" [value]="selFilterDir" class="sel-filter-dir">
+        <option value="asc">ASC</option>
+        <option value="desc">DESC</option>
+      </select>
+    </div>
+  </div>
+  <div class="list">
+    <ng-container *ngFor="let tariff of tariffs">
+      <app-tariff [tariff]="tariff" class="appTariff"></app-tariff>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+#tariff-list-table {
+  width: calc(100% - 20px);
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+
+  .list {
+    width: calc(100% - 16px);
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    padding: 8px;
+    padding-bottom: 0px;
+  }
+
+  .appTariff {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .filter {
+    width: calc(100% - 16px);
+    display: inline-flex;
+    flex-direction: column;
+    text-align: right;  
+  }
+
+  .sel-filter {
+    width: 90px;
+    font-size: 10px;
+  }
+
+  .sel-filter-dir {
+    width: 70px;
+    font-size: 10px;
+  }
+}

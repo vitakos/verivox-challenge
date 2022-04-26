@@ -1,0 +1,122 @@
+.tariffItem {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid #444;
+
+  .tariff-id,
+  .tariff-id2,
+  .tariff-name {
+    align-content: center;
+  }
+  .tariff-name {
+    padding-top: 15px;
+    flex: 1;
+  }
+  .tariff-streams {
+    flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    display: block;
+    font-size: 12px;
+  }
+  .tariff-stream {
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+  }
+  .stream-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .arrow {
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #666;
+  }
+  .greater:before {
+    content: ">";
+  }
+  .arrow-no-border {
+    width: 20px;
+    height: 18px;
+    line-height: 18px;
+  }
+  .space {
+    width: 6px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+  }
+  .stream-value {
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    border: 1px solid #444;
+    border-left: none;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .stream-value2 {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+  }
+  .tariff-id {
+    border-right: 1px solid #444;
+  }
+  .tariff-id-text {
+    position: relative;
+    top: 30%;
+  }
+  .tariff-id-text2 {
+    position: relative;
+    top: 5px;
+  }
+  .tariff-name-text {
+    margin: 15px 10px;
+  }
+  .tariff-benefits {
+    flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .tariff-cost {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+  }
+  .tariff-cost-inner,
+  .tariff-cost-inner2 {
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tariff-cost-inner2 {
+    flex-direction: row;
+  }
+  .tariff-value {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .tariff-button,
+  .tariff-button2 {
+    border: 2px solid #444;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .tariff-button {
+    width: 100px;
+  }
+  .tariff-button2 {
+    height: 60px;
+    line-height: 60px;
+  }
+}
